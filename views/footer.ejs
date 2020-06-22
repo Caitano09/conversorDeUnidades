@@ -10,41 +10,9 @@
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
 
-<script>
-    $(function () {
-        $('#calc').click(function () {
-            if ($('#rMilhas').prop("checked")) {
-                const milhas = parseFloat($('#milhas').val())
-                const metros = milhas * 1609.34
-                $('#metros').val(metros)
-            }
-            else {
-                const metros = parseFloat($('#metros').val())
-                const milhas = metros / 1609.34
-                $('#milhas').val(milhas)
-            }
-        })
+<script  src="/jquery-3.5.1.min.js"></script>
 
-        $('#rMilhas').click(function () {
-            $('#milhas').removeAttr("readonly")
-            $('#milhas').val("")
-            $('#metros').val("")
-            $('#metros').attr("readonly", "true")
-
-        })
-
-        $('#rMetros').click(function () {
-            $('#metros').removeAttr("readonly")
-            $('#milhas').val("")
-            $('#metros').val("")
-            $('#milhas').attr("readonly", "true")
-
-        })
-    })
-
-
-
-</script>
+<script src="/javascript.js"></script>
 
 </body>
 
