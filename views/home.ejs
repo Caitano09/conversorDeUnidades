@@ -1,0 +1,21 @@
+<%- include('header') %>
+    
+    <h1>Conversor de Unidades</h1>
+
+    <form>
+        <div class="form-group">
+            <input type="radio" name="rOpcao" id="rMilhas" checked>
+            <label for="milhas">Distância Milhas</label>
+            <input type="email" class="form-control" id="milhas" placeholder="Milhas">
+        </div>
+        <div class="form-group">
+            <input type="radio" name="rOpcao" id="rMetros">
+            <label for="metros">Distância Metros</label>
+            <input type="email" class="form-control" id="metros" placeholder="Metros" readonly>
+        </div>
+
+        <input type="button" id="calc" value=" Converter">
+    </form>
+
+
+<%- include('footer') %>
